@@ -29,7 +29,6 @@ h4{
     color: white;
     font-weight: 300;
     text-align: center;
-    display: none;
     line-height: unset;
 }
 body{
@@ -40,6 +39,15 @@ body{
 }
 #success{
     width: 1920px;
+}
+#dialogue{
+    background-image: url(img/selection1.png);
+    width: 908px;
+    height: 69px;
+    margin-left: 100px;
+}
+#all{
+    display:none;
 }
 #navbartext > li a img{
     width: 70px;

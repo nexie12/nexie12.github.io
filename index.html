@@ -9,6 +9,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="script" href="script.js">
+    <!-- <link rel="preload" href="img/DancePandemonica.gif" as="img">
+    <link rel="preload" href="img/DanceModeus.gif" as="img">
+    <link rel="preload" href="img/DanceCerberus.gif" as="img">
+    <link rel="preload" href="img/DanceMalina.gif" as="img">
+    <link rel="preload" href="img/DanceZdrada.gif" as="img">
+    <link rel="preload" href="img/DanceAzazel.gif" as="img">
+    <link rel="preload" href="img/DanceJustice.gif" as="img">
+    <link rel="preload" href="img/DanceLucifer.gif" as="img">
+    <link rel="preload" href="img/DanceJudgement.gif" as="img"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    function preload(arrayOfImages) {
+        $(arrayOfImages).each(function(){
+            $('<img/>')[0].src = this;
+            // Alternatively you could use:
+            // (new Image()).src = this;
+        });
+    }
+    preload([
+    'img/DanceModeus.gif',
+    'img/DanceCerberus.gif',
+    'img/DanceMalina.gif',
+    'img/DanceZdrada.gif',
+    'img/DanceAzazel.gif',
+    'img/DanceJustice.gif',
+    'img/DanceLucifer.gif',
+    'img/DanceJudgement.gif'
+    ]);
+    </script>
+
+
+
+    
 </head>
 
 <body>
@@ -54,7 +87,10 @@
             <li class="nav-item active">
                 <a class="nav-link" href="lucifer.html"><img src="img/DanceLucifer.gif"><span class="sr-only">(current)</span></a>
             </li>
-
+            <!-- Judgement -->
+            <li class="nav-item active">
+                <a class="nav-link" href="judgement.html"><img src="img/DanceJudgement.gif"><span class="sr-only">(current)</span></a>
+            </li>
           </ul>
         </div>
       </nav>

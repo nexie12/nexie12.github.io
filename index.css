@@ -1,0 +1,82 @@
+@font-face{
+    font-family: helltaker;
+    src: url(/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf)
+}
+h1{
+    font-family: helltaker;
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+h2{
+    font-family: helltaker;
+    font-size: 50px;
+    color:#e64d51;
+    font-weight: 900;
+    text-align: center;
+}
+h3{
+    font-family: helltaker;
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+h4{
+    font-family: helltaker;
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    display: none;
+    line-height: unset;
+}
+body{
+    background-color:#02021a;
+    background-image:url("/img/bkg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+#success{
+    width: 1920px;
+}
+#navbartext > li a img{
+    width: 70px;
+}
+#logo > img{
+    align-content: center;
+}
+#pandemonica > img{
+    height: 610px;
+    margin-bottom: 20px;
+}
+#modeus > img {
+    height: 610px;
+    margin-bottom: 20px;
+}
+#cerberus > img{
+    height: 610px;
+    margin-bottom: 20px;
+}
+#malina > img{
+    height: 610px;
+    margin-bottom: 20px;
+}
+#zdrada > img{
+    height: 610px;
+    margin-bottom: 20px;
+}
+#azazel > img{
+    height: 610px;
+    margin-bottom: 20px;
+}
+#justice > img {
+    height: 610px;
+    margin-bottom: 20px;
+}
+#lucifer > img{
+    height: 610px;
+    margin-bottom: 20px;
+}
+

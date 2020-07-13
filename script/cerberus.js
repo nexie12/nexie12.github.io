@@ -4,7 +4,7 @@ let ded = false;
         if(counter == 0){
             document.getElementById("all").style.display = "inline-block";
             document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus1.png";
-            document.getElementById("cerberusdial").textContent = "Are you a human? A real human? Please, take us with you."
+            document.getElementById("dial").innerHTML = "Are you a human? A real human? Please, take us with you."
             counter++;
         }
         if(ded == true){
@@ -14,7 +14,7 @@ let ded = false;
                 document.getElementById("badendclear").style.display = "inline";
                 document.getElementById("badend").style.display = "none";
                 document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus1.png";
-                document.getElementById("cerberusdial").textContent = "Are you a human? A real human? Please, take us with you."
+                document.getElementById("dial").innerHTML = "Are you a human? A real human? Please, take us with you."
                 document.getElementById("all").style.display = "none";
                 document.getElementById("retry").style.display = "none";
                 ded = false
@@ -22,9 +22,9 @@ let ded = false;
              }, 5000);
         }
     }
-    function cerans1(){
+    function ans1(){
             document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus2.png";
-            document.getElementById("cerberusdial").textContent = "Yes! At last! It's time to corrupt the mortal realm!"
+            document.getElementById("dial").innerHTML = "Yes! At last! It's time to corrupt the mortal realm!"
             document.getElementById("all").style.display = "none";
             setTimeout(() => { 
                 document.getElementById("retry").style.display = "inline-block";
@@ -32,13 +32,13 @@ let ded = false;
     }
     function retry(){
         document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus1.png";
-        document.getElementById("cerberusdial").textContent = "Are you a human? A real human? Please, take us with you."
+        document.getElementById("dial").innerHTML = "Are you a human? A real human? Please, take us with you."
         document.getElementById("all").style.display = "none";
         document.getElementById("retry").style.display = "none";
         counter = 0;
     }
-    function cerans2(){
+    function ans2(){
         ded = true;
-        document.getElementById("cerberusdial").textContent = "We need a human to cross the hell's gate. You don't have to be in one piece though"
+        document.getElementById("dial").innerHTML = "We need a human to cross the hell's gate. You don't have to be in one piece though."
         document.getElementById("all").style.display = "none";
     }

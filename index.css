@@ -41,7 +41,25 @@ body{
     background-position: center top;
     height: 100%;
 }
+img{
+    pointer-events: none;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
 #badend{
+    display:none;
+}
+#badend1{
+    display:none;
+}
+#badendlucifer{
     display:none;
 }
 #badendclear{
@@ -72,6 +90,31 @@ body{
 #dialogue:hover,
 #dialogue:focus,
 #dialogue:active {
+    transform: scale(1.1);
+    background: url("img/selection2.png") no-repeat;
+}
+#dialogue2{
+    background-image: url(img/selection1.png);
+    width: 908px;
+    height: 69px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    cursor: pointer;    
+}
+
+
+#dialogue2:hover,
+#dialogue2:focus,
+#dialogue2:active {
     transform: scale(1.1);
     background: url("img/selection2.png") no-repeat;
 }
@@ -114,6 +157,9 @@ body{
 #all{
     display:none;
 }
+#all2{
+    display:none;
+}
 #navbartext > li a img{
     width: 70px;
 }
@@ -121,35 +167,35 @@ body{
     align-content: center;
 }
 #pandemonica > img{
-    height: 60%;
-    margin-bottom: 20px;
+    height: 100%;
+    margin-top: -10px;
 }
 #modeus > img {
-    height: 610px;
-    margin-bottom: 20px;
+    height: 100%;
+    margin-top: -10px;
 }
 #cerberus > img{
     height: 100%;
-    margin-bottom: 20px;
+    margin-top: -10px;
 }
 #malina > img{
-    height: 610px;
-    margin-bottom: 20px;
+    height: 100%;
+    margin-top: -10px;
 }
 #zdrada > img{
-    height: 610px;
-    margin-bottom: 20px;
+    height: 100%;
+    margin-top: -10px;
 }
 #azazel > img{
-    height: 610px;
-    margin-bottom: 20px;
+    height: 100%;
+    margin-top: -10px;
 }
 #justice > img {
-    height: 610px;
-    margin-bottom: 20px;
+    height: 100%;
+    margin-top: -10px;
 }
-#lucifer > img{
-    height: 610px;
-    margin-bottom: 20px;
+#lucifer_2 > img{
+    height: 100%;
+    margin-top: -10px;
 }
 

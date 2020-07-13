@@ -9,83 +9,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="/script/justice.js"></script>
-    
 </head>
 
-<body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-#02021a">
-        <!-- LOGO -->
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="200px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- NAV ELEMENTS -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto" id="navbartext">
-            <!-- Pandemonica -->
-            <li class="nav-item active">
-                <a class="nav-link" href="pandemonica.html"><img src="img/DancePandemonica.gif"><span class="sr-only">(current)</span></a>
-            </li>
-            <!-- Modeus -->
-            <li class="nav-item active">
-                <a class="nav-link" href="modeus.html"><img src="img/DanceModeus.gif"><span class="sr-only">(current)</span></a>
-            </li>
-            <!-- Cerberus -->
-            <li class="nav-item active">
-              <a class="nav-link" href="cerberus.html"><img src="img/DanceCerberus.gif"><img src="img/DanceCerberus.gif"><img src="img/DanceCerberus.gif"><span class="sr-only">(current)</span></a>
-            </li>
-            <!-- Malina -->
-            <li class="nav-item active">
-                <a class="nav-link" href="malina.html"><img src="img/DanceMalina.gif"><span class="sr-only">(current)</span></a>
-            </li>
-            <!-- Zdrada -->
-            <li class="nav-item active">
-                <a class="nav-link" href="zdrada.html"><img src="img/DanceZdrada.gif"><span class="sr-only">(current)</span></a>
-            </li>
-            <!-- Azazel -->
-            <li class="nav-item active">
-                <a class="nav-link" href="azazel.html"><img src="img/DanceAzazel.gif"><span class="sr-only">(current)</span></a>
-            </li>
-            <!-- Justice -->
-            <li class="nav-item active">
-                <a class="nav-link" href="justice.html"><img src="img/DanceJustice.gif"><span class="sr-only">(current)</span></a>
-            </li>
-            <!-- Lucifer -->
-            <li class="nav-item active">
-                <a class="nav-link" href="lucifer.html"><img src="img/DanceLucifer.gif"><span class="sr-only">(current)</span></a>
-            </li>
-            <!-- Judgement -->
-            <li class="nav-item active">
-                <a class="nav-link" href="judgement.html"><img src="img/DanceJudgement.gif"><span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    <!-- SITE -->
-    <div class="container">
-        <!-- <div class="row">
-            <div class="col-12">
-                <div class="text-center"><img src="logo.png">
-                </div>
-            </div>
-        </div> -->
-        <div class="row">
-            <div class="col-xl-12">
-                <div id="cerberus" class="text-center">
-                    <img alt="" src="/img/justice/justice1.png" 
-                    id="imgClickAndChange" onclick="changeImage()"/>
-                </div>
+<body class="noselect">
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="text-center">
+                <img id="badend" src="img/justice/badend.png">
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="text-center">
-                    <h2>• Justice, the Awesome Demon •</h2>
+    </div>
+    <div id="badendclear">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-#02021a">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="200px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAV ELEMENTS -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" id="navbartext">
+                    <!-- Pandemonica -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="pandemonica.html"><img src="img/DancePandemonica.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Modeus -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="modeus.html"><img src="img/DanceModeus.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Cerberus -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cerberus.html"><img src="img/DanceCerberus.gif"><img
+                                src="img/DanceCerberus.gif"><img src="img/DanceCerberus.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Malina -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="malina.html"><img src="img/DanceMalina.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Zdrada -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="zdrada.html"><img src="img/DanceZdrada.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Azazel -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="azazel.html"><img src="img/DanceAzazel.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Justice -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="justice.html"><img src="img/DanceJustice.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Lucifer -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="lucifer.html"><img src="img/DanceLucifer.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Judgement -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="judgement.html"><img src="img/DanceJudgement.gif"><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- SITE -->
+        <div class="container">
+            <div onclick="changeImage()">
+                <div class="row chr-nexie">
+                    <div class="col-xl-12">
+                        <div id="justice" class="text-center">
+                            <img alt="" src="/img/justice/justice2.png" 
+                            id="imgClickAndChange" onclick="changeImage()"/>
+                        </div>
+                    </div>
+                </div>
+                <!-- Demon name -->
+                <div class="row chr-nexie">
+                    <div class="col-xl-12">
+                        <div class="text-center">
+                            <h2>• Justice, the Awesome Demon •</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- voice -->
+                <div class="row chr-nexie">
+                    <div class="col-xl-12">
+                        <div class="text-center">
+                            <h3 id="dial">Yo, did you just solve that puzzle? That's awesome!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Options -->
+            <div id="all">
+                <div class="row chr-nexie">
+                    <div class="col-xl-12">
+                        <div id="dialogue" class="text-center">
+                            <h4 id="ans1" class="align-center mb-auto mt-auto pt-1 h-100 w-100" onclick="ans1()">
+                                It took some work. Wanna join my harem?</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row chr-nexie">
+                    <div class="col-xl-12">
+                        <div id="dialogue" class="text-center">
+                            <h4 id="ans2" class="align-center mb-auto mt-auto pt-1 h-100 w-100" onclick="ans2()" style="font-size: 37px;">
+                            I just skipped it in the menu. Wanna join my harem?</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Retry button -->
+            <div class="row">
+                <div class="col-xl-12">
+                    <div id="retry" class="text-center">
+                        <h4 id="ans1" class="align-center mb-auto mt-auto pt-1 h-100 w-100" onclick="retry()">Again?
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>

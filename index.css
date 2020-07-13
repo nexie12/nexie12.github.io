@@ -2,6 +2,9 @@
     font-family: helltaker;
     src: url(/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf)
 }
+html{
+    height: 100%;
+}
 h1{
     font-family: helltaker;
     font-size: 50px;
@@ -36,6 +39,13 @@ body{
     background-image:url("/img/bkg.png");
     background-repeat: no-repeat;
     background-position: center top;
+    height: 100%;
+}
+#badend{
+    display:none;
+}
+#badendclear{
+    height: 100%;
 }
 #success{
     width: 1920px;
@@ -45,6 +55,61 @@ body{
     width: 908px;
     height: 69px;
     margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    cursor: pointer;    
+}
+
+
+#dialogue:hover,
+#dialogue:focus,
+#dialogue:active {
+    transform: scale(1.1);
+    background: url("img/selection2.png") no-repeat;
+}
+#retry{
+    background-image: url(img/selection1.png);
+    width: 908px;
+    height: 69px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    display: none;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    cursor: pointer;    
+}
+
+
+#retry:hover,
+#retry:focus,
+#retry:active {
+    transform: scale(1.1);
+    background: url("img/selection2.png") no-repeat;
+}
+
+.col-xl-12{
+    height: 100%;
+}
+.container{
+    height: 75%;
+}
+
+.chr-nexie {
+    height:100%
 }
 #all{
     display:none;
@@ -56,7 +121,7 @@ body{
     align-content: center;
 }
 #pandemonica > img{
-    height: 610px;
+    height: 60%;
     margin-bottom: 20px;
 }
 #modeus > img {
@@ -64,7 +129,7 @@ body{
     margin-bottom: 20px;
 }
 #cerberus > img{
-    height: 610px;
+    height: 100%;
     margin-bottom: 20px;
 }
 #malina > img{

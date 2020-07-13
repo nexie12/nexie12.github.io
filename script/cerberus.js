@@ -8,32 +8,34 @@ let ded = false;
             counter++;
         }
         if(ded == true){
-            window.location.replace("/badend.html");
+            document.getElementById("badendclear").style.display = "none";
+            document.getElementById("badend").style.display = "inline-block";
+            setTimeout(() => { 
+                document.getElementById("badendclear").style.display = "inline";
+                document.getElementById("badend").style.display = "none";
+                document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus1.png";
+                document.getElementById("cerberusdial").textContent = "Are you a human? A real human? Please, take us with you."
+                document.getElementById("all").style.display = "none";
+                document.getElementById("retry").style.display = "none";
+                ded = false
+                counter = 0
+             }, 5000);
         }
-
-        // function cerans1(){
-        //     document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus2.png";
-        //     document.getElementById("cerberusdial").textContent = "Yes! At last! It's time to corrupt the mortal realm!"
-        // }
-        // if(counter == 0){
-        //     document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus2.png";
-        //     document.getElementById("cerberusdial").textContent = "Yes! At last! It's time to corrupt the mortal realm!"
-        //     counter++;
-        // }
-        // else if(counter == 1){
-        //     document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus3.png";
-        //     counter++;
-        // }
-        // else{
-        //     document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus1.png";
-        //     counter=0;
-        // }
     }
     function cerans1(){
             document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus2.png";
             document.getElementById("cerberusdial").textContent = "Yes! At last! It's time to corrupt the mortal realm!"
             document.getElementById("all").style.display = "none";
-            counter = 0;
+            setTimeout(() => { 
+                document.getElementById("retry").style.display = "inline-block";
+             }, 1000);
+    }
+    function retry(){
+        document.getElementById("imgClickAndChange").src = "/img/cerberus/cerberus1.png";
+        document.getElementById("cerberusdial").textContent = "Are you a human? A real human? Please, take us with you."
+        document.getElementById("all").style.display = "none";
+        document.getElementById("retry").style.display = "none";
+        counter = 0;
     }
     function cerans2(){
         ded = true;

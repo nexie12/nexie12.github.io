@@ -3,7 +3,7 @@ let ded = false;
     function changeImage() {
         if(counter == 0){
             document.getElementById("all").style.display = "inline-block";
-            document.getElementById("imgClickAndChange").src = "/img/pandemonica/pandemonica2.png";
+            document.getElementById("imgClickAndChange").src = "/img/pandemonica/Pandemonica2.png";
             document.getElementById("dial").innerHTML = "Name's Pandemonica, Hell's Customer Service.<br>How may I serve you?"
             counter++;
         }
@@ -13,7 +13,7 @@ let ded = false;
             setTimeout(() => { 
                 document.getElementById("badendclear").style.display = "inline";
                 document.getElementById("badend").style.display = "none";
-                document.getElementById("imgClickAndChange").src = "/img/pandemonica/pandemonica2.png";
+                document.getElementById("imgClickAndChange").src = "/img/pandemonica/Pandemonica2.png";
                 document.getElementById("dial").innerHTML = "Name's Pandemonica, Hell's Customer Service.<br>How may I serve you?"
                 document.getElementById("all").style.display = "none";
                 document.getElementById("retry").style.display = "none";
@@ -28,14 +28,14 @@ let ded = false;
         document.getElementById("all").style.display = "none";
     }
     function retry(){
-        document.getElementById("imgClickAndChange").src = "/img/pandemonica/pandemonica2.png";
+        document.getElementById("imgClickAndChange").src = "/img/pandemonica/Pandemonica2.png";
         document.getElementById("dial").innerHTML = "Name's Pandemonica, Hell's Customer Service.<br>How may I serve you?"
         document.getElementById("all").style.display = "none";
         document.getElementById("retry").style.display = "none";
         counter = 0;
     }
     function ans2(){
-        document.getElementById("imgClickAndChange").src = "/img/pandemonica/pandemonica1.png";
+        document.getElementById("imgClickAndChange").src = "/img/pandemonica/Pandemonica1.png";
         document.getElementById("dial").innerHTML = "Sweet of you to offer. I could really use some coffee.<br>I'm not myself without it."
         document.getElementById("all").style.display = "none";
         setTimeout(() => { 
